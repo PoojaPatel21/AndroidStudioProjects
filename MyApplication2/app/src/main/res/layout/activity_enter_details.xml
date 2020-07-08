@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="1029dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFE57F"
+        android:fillViewport="true"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+
+        android:paddingBottom="10dp"
+        android:scrollbarStyle="insideInset"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Personal Details"
+                    android:textAlignment="center"
+                    android:textColor="#570D07"
+                    android:textColorLink="#00B43939"
+                    android:textSize="35dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Name"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/name1"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Name"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="EMAIL"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/email1"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Email"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="PHONE  NUMBER"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/contact1"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Contact"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="ADDRESS"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/addr1"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Address"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:text="Educational Details"
+                    android:textAlignment="center"
+                    android:textColor="#570D07"
+                    android:textColorLink="#00B43939"
+                    android:textSize="35dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Educational Details(Xth)"
+                    android:textAlignment="center"
+                    android:textColor="#570D07"
+                    android:textColorLink="#00B43939"
+                    android:textSize="35dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="SCHOOL"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/scname"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="School Name"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="YEAR OF PASSING"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/scyop"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Passing Year"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="PERCENTAGE"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/scper"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Percentage"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Educational Details(XIIth)"
+                    android:textAlignment="center"
+                    android:textColor="#570D07"
+                    android:textColorLink="#00B43939"
+                    android:textSize="35dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="JR.COLLEGE NAME"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/jrname"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Jr.College"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="YEAR OF PASSING"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/jryop"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Passing Year"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="PERCENTAGE "
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/jrper"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Percentage"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="MAJORS"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/major"
+                    android:layout_width="208dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Major Subject"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Educational Details(UG)"
+                    android:textAlignment="center"
+                    android:textColor="#570D07"
+                    android:textColorLink="#00B43939"
+                    android:textSize="35dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="INSTITUTION NAME"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/clname"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter College"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="YEAR OF PASSING"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/clyop"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Graduation Year"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="GRADE OBTAINED"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/clper"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Grade"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="DEGREE"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/cldeg"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Degree"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Internship Details"
+                    android:textAlignment="center"
+                    android:textColor="#570D07"
+                    android:textColorLink="#00B43939"
+                    android:textSize="35dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="COMPANY NAME"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/intname"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Company"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="DURATION"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/intdur"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Internship Duration"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="#F3C267"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="ROLE AT INTERNSHIP"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/introle"
+                    android:layout_width="188dp"
+                    android:layout_height="78dp"
+                    android:hint="Enter Role"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Extra Curricular"
+                    android:textAlignment="center"
+                    android:textColor="#570D07"
+                    android:textColorLink="#00B43939"
+                    android:textSize="35dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:background="#F3C267"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:text="DETAILS"
+                        android:textAlignment="center"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/details"
+                        android:layout_width="188dp"
+                        android:layout_height="78dp"
+                        android:hint="Enter Details"
+                        android:paddingRight="20dp"
+                        android:textAlignment="center"></EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/create"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="#B2E4BF"
+                    android:text="Layout 1"
+                    android:textAlignment="center"
+                    android:textColor="#1E705F"
+                    android:textSize="30dp"
+                    android:textStyle="bold|italic">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/layout1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="#B2E4BF"
+                    android:text="Layout 2"
+                    android:textAlignment="center"
+                    android:textColor="#1E705F"
+                    android:textSize="30dp"
+                    android:textStyle="bold|italic">
+
+                </Button>
+                <Button
+                    android:id="@+id/layout2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="#B2E4BF"
+                    android:text="Layout 3"
+                    android:textAlignment="center"
+                    android:textColor="#1E705F"
+                    android:textSize="30dp"
+                    android:textStyle="bold|italic">
+
+                </Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

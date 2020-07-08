@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/marble"
+    tools:context=".IncomeTax">
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="69dp">
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="198dp"
+            android:layout_height="34dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Monthly salary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/e11"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <TextView
+            android:id="@+id/tv22"
+            android:layout_width="179dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Number of months"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/e22"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="63dp">
+
+        <TextView
+            android:id="@+id/tv33"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Deduction u/s 80C"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/e33"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+            android:id="@+id/tv44"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Deduction u/s 80D"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/e44"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:onClick="taxcalculation"
+            android:text="Calculate"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv55"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Net taxable salary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/tv66"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Payable Tax"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <TextView
+            android:id="@+id/tv77"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Salary in hand"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:onClick="home"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:onClick="calendar"
+            android:fontFamily="sans-serif-black"
+            android:text="Planner" />
+    </TableRow>
+
+</LinearLayout>

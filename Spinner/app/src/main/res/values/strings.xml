@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string-array name="ArrFont">
+        <item>Sans Serif</item>
+        <item>Monospace</item>
+        <item>Serif</item>
+    </string-array>
+    <string-array name="ArrCol">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="ArrSize">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>20</item>
+        <item>35</item>
+
+    </string-array>
+    <string-array name="ArrStyle">
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold-Italic</item>
+        <item>Normal</item>
+        <item>Underline</item>
+    </string-array>
+</resources>

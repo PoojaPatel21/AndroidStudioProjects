@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Preview2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="439dp"
+        android:orientation="vertical"
+        tools:context=".Preview">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Resume"
+            android:textAlignment="center"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="match_parent"
+                android:text=" Name: "
+                android:textAlignment="gravity"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvnm1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="match_parent"
+                android:text=" Email: "
+                android:textAlignment="gravity"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvem1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="match_parent"
+                android:text=" Address "
+                android:textAlignment="gravity"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvad1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="match_parent"
+                android:text=" Phone No: "
+                android:textAlignment="gravity"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvph1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Educational Details"
+                android:textAlignment="center"
+                android:textSize="35dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center">
+
+            <TableRow android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="133dp"
+                    android:layout_height="30dp"
+                    android:text="Institution Name"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:layout_width="133dp"
+                    android:layout_height="30dp"
+                    android:text="Grade"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:layout_width="144dp"
+                    android:layout_height="30dp"
+                    android:text="Passing Year"
+                    android:textAlignment="center">
+
+                </TextView>
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/tvscnm"
+                    android:layout_width="133dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:id="@+id/tvscper"
+                    android:layout_width="133dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:id="@+id/tvscyop"
+                    android:layout_width="144dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center">
+
+                </TextView>
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/tvjrnm"
+                    android:layout_width="133dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:id="@+id/tvjrper"
+                    android:layout_width="133dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:id="@+id/tvjryop"
+                    android:layout_width="144dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center">
+
+                </TextView>
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/tvclnm"
+                    android:layout_width="133dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:id="@+id/tvclper"
+                    android:layout_width="133dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:id="@+id/tvclyop"
+                    android:layout_width="144dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center">
+
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="WorkExperience"
+        android:textAlignment="center"
+        android:textSize="30dp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:text="Company Name: "
+            android:textAlignment="gravity"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvintnm"
+            android:textAlignment="center">
+
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:text=" Duration: "
+            android:textAlignment="gravity"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvintdur"
+            android:textAlignment="center">
+
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:text=" Role: "
+            android:textAlignment="gravity"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvintrole"
+            android:textAlignment="center">
+
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Extra Curricular"
+        android:textAlignment="center"
+        android:textSize="30dp"></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:text=" Details: "
+            android:textAlignment="gravity"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvdetails"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+
+
+        </TextView>
+
+
+    </LinearLayout>
+</LinearLayout>

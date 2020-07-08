@@ -1,0 +1,83 @@
+'''
+Created on Aug 28, 2019
+
+@author: POOJA
+'''
+import csv
+import matplotlib.pyplot as plt
+
+from cups import IPP_NOT_ACCEPTING
+from cProfile import label
+import numpy as np
+import matplotlib.pyplot as plt
+
+c=[]
+g=[]
+s=[]
+b=[]
+
+with open("csv.csv")as csvfile:      #object of my file
+    readCSV=csv.reader(csvfile,delimiter=",")
+    for row in readCSV:
+        country=row[0]
+        gold=row[1]
+        silver=row[2]
+        bronze=row[3]
+        gold=int(gold)
+        silver=int(silver)
+        bronze=int(bronze)
+        c.append(country)
+        g.append(gold)
+        s.append(silver)
+        b.append(bronze)
+
+cc=np.asarray(c)
+gg=np.asarray(g)
+ss=np.asarray(s)
+bb=np.asarray(b)
+
+ch="1";
+while(ch>'0'):
+    print("MENU:\n1.SCATTER GRAPH \n2.LINE GRAPH \n3.BAR GRAPH \n4.PIE CHART")
+    choice=(input("\nEnter choice:"));
+    if(choice=="1"):
+        plt.plot(gg,'r*',label="gold" )
+        plt.plot(ss,'c*',label="silver")
+        plt.plot(bb,'g*',label="bronze")
+        plt.legend(loc='best')
+        plt.show() 
+       
+           
+    elif(choice=="2"):
+        plt.plot(gg,'r*:',label="gold" )
+        plt.plot(ss,'c*:',label="silver")
+        plt.plot(bb,'g*:',label="bronze")
+        plt.legend(loc='best')
+        plt.show()
+           
+    elif(choice=="3"):
+       
+        barwidth=0.1
+        pos=np.arange(len(cc))
+        plt.bar(pos,gg,barwidth,color="red")
+        plt.bar(pos+barwidth,ss,barwidth,color="cyan")
+        plt.bar(pos+barwidth+barwidth,bb,barwidth,color="green")
+        plt.xlabel('COUNTRY')
+        plt.ylabel("MEDALS")
+        plt.title("OYLMPIC MEDAL k
+        plt.xticks(np.arange(len(gg)),cc)        #write country name on X-axis
+        plt.show();
+    elif(choice=="4"):
+        explode=(0,0,0,0.1,0)
+        colors=('lightskyblue','dodgerblue','cornflowerblue','royalblue','b')
+        plt.pie(gg,labels=cc,startangle=90,explode=explode,colors=colors,autopct='%1.1f%%',radius=1.5,shadow=True)
+        plt.legend(loc="upper left")
+        plt.show()
+    
+    else:
+        print("invalid");
+    
+    ch=(input("\nDo you want to enter again?If (1/0)"))
+print("EXIT")    
+
+

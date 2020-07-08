@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">  <!--added-->
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Name" />
+    <Spinner
+        android:id="@+id/spinnerFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ArrFont"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ArrCol"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <Spinner
+        android:id="@+id/spinneSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="283dp"
+        android:entries="@array/ArrSize"/>
+
+    <Spinner
+        android:id="@+id/spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="375dp"
+        android:entries="@array/ArrStyle"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+</LinearLayout>

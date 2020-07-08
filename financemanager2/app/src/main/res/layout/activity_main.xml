@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/main_img"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="77dp">
+
+        <TextView
+            android:layout_width="185dp"
+            android:layout_height="101dp"
+            android:autoText="true"
+            android:fontFamily="monospace"
+            android:layerType="none"
+            android:layoutDirection="inherit"
+            android:text="   Tax Manager"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@id/b1"
+            app:layout_constraintLeft_toLeftOf="@id/b1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="223dp"
+            android:layout_height="75dp"
+            android:onClick="activity_tax"
+            android:text="Income Tax Calculation" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:fontFamily="monospace"
+            android:text="  Go to Planner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:onClick="calendarview"
+            android:text="Planner" />
+    </TableRow>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="406dp">
+
+        <LinearLayout
+            android:layout_width="425dp"
+            android:layout_height="352dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </FrameLayout>
+
+</TableLayout>
